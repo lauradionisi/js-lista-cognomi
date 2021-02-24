@@ -6,11 +6,11 @@ console.log(cognome);
 // inserire in un Array con altri cognomi
 
 var listaCognomi = [
- "Rossi",
- "Bianchi",
- "Duzioni",
- "Balsano",
- "Verdi",
+ "rossi",
+ "bianchi",
+ "duzioni",
+ "balsano",
+ "verdi",
 ];
 console.log(listaCognomi);
 
@@ -23,19 +23,18 @@ var listaCognomiOrdinati = [
  "balsano",
  "verdi",
 ];
-
-
-
 // Inserire il cognome dell'utente dentro l'array
 
 listaCognomiOrdinati.push(cognome);
 
+ // Stampare la lista ordinata alfabeticamente
+ listaCognomiOrdinati.sort();
+
+
+
 for (var i = 0; i < listaCognomiOrdinati.length; i++) {
  console.log(listaCognomiOrdinati[i]);
  document.getElementById("cognomi").innerHTML += "<li>" + listaCognomiOrdinati[i] + "</li>";
-
- // Stampare la lista ordinata alfabeticamente
- listaCognomiOrdinati.sort();
 }
 
 
